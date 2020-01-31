@@ -24,7 +24,7 @@ select replicate('z', 5) -- Répliquer un caractère un certain nombre de fois
 select left(FirstName, 2) from Employee --Les deux premiers caractères du prenom d'un employé
 select lower(left(firstname, 1)) + upper(left(lastname, 2)) from Employee --la premiere lettre du prénom en minuscule, les deux premieres du nom en maj
 select LastName, substring(LastName, 3, 2) from Employee -- extrait les caractères 3 et 2 du prenom avec substring
-select LastName, charindex('h', lastname) from Employee -- Renvoio la position du caractère h dans le prenom s'il y en a un
+select LastName, charindex('h', lastname) from Employee -- Renvoie la position du caractère h dans le prenom s'il y en a un
 select LastName, replace(lastname, 'a', 'e') from Employee -- remplacer les a par des e dans les prenoms
 select Name, len(replace(name, 'a', 'r')) from Product -- ou encore
 select Name, len(replace(name, 'ai', 'r')) from Product -- ou encore

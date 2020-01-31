@@ -1,9 +1,11 @@
-﻿/*
+﻿
+backup database Northwind2 to disk = N'C:\Users\Adminl\Desktop\Jeremy\BDD\backups\Northwind2.bak' with format
 restore database Northwind2 from disk = N'C:\Users\Adminl\Desktop\Jeremy\BDD\backups\Northwind2.bak'
 with
-move 'Northwind2' to N'C:\Users\Adminl\Desktop\Jeremy\BDD\backups\Northwind2.mdf',
-move 'Northwind2_log' to N'C:\Users\Adminl\Desktop\Jeremy\BDD\backups\Northwind2.ldf'
-*/
+move 'Northwind2' to N'C:\Users\Adminl\Desktop\Jeremy\BDD\Mes BDD\Northwind2.mdf',
+move 'Northwind2_log' to N'C:\Users\Adminl\Desktop\Jeremy\BDD\Mes BDD\Northwind2.ldf'
+
+
 
 insert Customer (CustomerId, CompanyName, ContactName, ContactTitle, AddressId)
 values ('ESSAI', 'Mon entreprise', NULL, NULL, '5d151bcb-ca1d-45b9-b80f-c45a7bc62334')
